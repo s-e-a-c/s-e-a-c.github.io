@@ -1,28 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>work</title>
+    <title>sea-c</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <style>
-
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
-<body style="background-color:#FFFFFF;">
-    <div class="container" style="margin: auto; width:500px; margin-top:5%">
-        <div>
-            <a class="image" href="index.html"> <img src="img/ink.gif" alt="sea-c" style="width:128px;"></a>                
-            <a href="about.html" style="color:#000000; margin:10px">About</a>
-        <a href="work.html" style="color:#000000; margin:10px">Work</a>
-        <a href="contact.html" style="color:#000000; margin:10px">Contact</a>
-    </div>
-        <br />
-    </div>
-    <div class="container" style="margin-left: 30%; margin-right:20%; width:auto">
-            <a href="mailto:sea.c.artwork@gmail.com" style="color:#000000; line-height:40px; font-size:12px; margin-bottom:50px">
+
+<style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      font-weight: thin;
+      background-color: #ffffff;
+      color: #000000;
+      line-height: 25px;
+    }
+
+    p {
+        text-align: center;
+        width: 400px;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: stretch;
+      align-content: stretch;
+      margin: 10px;
+    }
+    
+    .flex-container > div {
+      background-color: #ffffff;
+      width: 80px;
+      margin: 0px;
+      text-align: center;
+      padding: 2px;
+      font-size: 16px;
+    }
+
+    .pcontent-row {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 800px;
+      flex-basis: 30%;
+      justify-content: center;
+      align-items: stretch;
+      align-content: stretch;
+      margin: 10px;
+    }
+
+    .pcontent-row > div {
+      background-color: #ffffff;
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+      text-align: center;
+      font-size: 16px;
+      border-style: solid;
+      border-width: 0.5px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 26px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 16px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    hr {
+        width: 400px;
+        height: 0.5px;
+        border: none;
+        color: #000000; /* old IE */
+        background-color: #000000; /* Modern Browsers */
+    }
+
+    .p-link {
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .p-image {
+        width: 200%;
+    }
+
+    a {
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    a:link {
+        color: #000000;
+      }
+      
+      /* visited link */
+      a:visited {
+        color: #000000;
+      }
+      
+      /* mouse over link */
+      a:hover {
+        color: #cccccc;
+      }
+      
+      /* selected link */
+      a:active {
+        color: #ffffff;
+      }
+
+      a.home-link {
+          color: #000000;
+      }
+</style>
+
+
+<body>
+
+<h1><a href = "index.html">Sean Christofferson</a></h1>
+
+<h2></h2>
+
+<div class="flex-container">
+    <div><a href = "about.html">About</a></div>
+    <div><a href = "work.html">Work</a></div>
+    <div><a href = "contact.html">Contact</a></div> 
+</div>
+
+<hr>
+<center>
+    <p>
+        If you've got a project in mind, or just I cool idea you'd like to share, let me know!
+    </br>
+        <a href="mailto:sea.c.artwork@gmail.com" style="font-size:12px;">
                 sea.c.artwork@gmail.com </br>
             </a>
-        </div>
+    </p>
+
+    <a href="https://twitter.com/_sea_c_" class="fa fa-twitter"></a>
+    <a href="https://www.instagram.com/sean.christofferson/" class="fa fa-instagram"></a>
+</center>
+
 </body>
 </html>

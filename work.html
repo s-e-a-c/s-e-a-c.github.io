@@ -1,35 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>work</title>
+    <title>sea-c</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <style>
-    .column {
-      float: left;
-      width: 256px;
-      padding: 10px;
-      height: 300px;
-      text-align: center;
-    }
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
-<body style="background-color:#FFFFFF;">
-    <div class="container" style="margin: auto; width:500px; margin-top:5%">
-        <div>
-            <a class="image" href="index.html"> <img src="img/ink.gif" alt="sea-c" style="width:128px;"></a>                
-            <a href="about.html" style="color:#000000; margin:10px">About</a>
-        <a href="work.html" style="color:#000000; margin:10px">Work</a>
-        <a href="contact.html" style="color:#000000; margin:10px">Contact</a>
+
+<style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      font-weight: thin;
+      background-color: #ffffff;
+      color: #000000;
+      line-height: 25px;
+    }
+
+    p {
+        text-align: left;
+        margin: 20px;
+        max-width: 66.6666%;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: stretch;
+      align-content: stretch;
+      margin: 10px;
+    }
+    
+    .flex-container > div {
+      background-color: #ffffff;
+      width: 80px;
+      margin: 0px;
+      text-align: center;
+      padding: 2px;
+      font-size: 16px;
+    }
+
+    .pcontent-row {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 800px;
+      flex-basis: 30%;
+      justify-content: center;
+      align-items: stretch;
+      align-content: stretch;
+      margin: 10px;
+    }
+
+    .pcontent-row > div {
+      display: flex;
+      background-color: #ffffff;
+      max-width: 800px;
+      height: 400px;
+      margin: 10px;
+      font-size: 16px;
+      border-style: solid;
+      border-width: 0.5px;
+      overflow: hidden;
+    }
+
+    .p-link {
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+        align-content: center;
+        height: 100%;
+        width: 33%;
+        min-width: 33%;
+    }
+
+    .p-image {
+        transition: 0.5s;
+    }
+    .p-image:hover {
+        opacity: 0.5;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 26px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 16px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    hr {
+        width: 400px;
+        height: 0.5px;
+        border: none;
+        color: #000000; /* old IE */
+        background-color: #000000; /* Modern Browsers */
+    }
+
+    a {
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    a:link {
+        color: #000000;
+      }
+      
+      /* visited link */
+      a:visited {
+        color: #000000;
+      }
+      
+      /* mouse over link */
+      a:hover {
+        color: #cccccc;
+      }
+      
+      /* selected link */
+      a:active {
+        color: #ffffff;
+      }
+
+      a.home-link {
+          color: #000000;
+      }
+
+      .anchor {
+          position: relative;
+          top: -25%;
+      }
+</style>
+
+
+<body>
+
+<h1><a href = "index.html">Sean Christofferson</a></h1>
+
+<div class="flex-container">
+    <div><a href = "about.html">About</a></div>
+    <div><a href = "work.html">Work</a></div>
+    <div><a href = "contact.html">Contact</a></div> 
+</div>
+
+<hr>
+<center>
+<div class="pcontent-row">
+    <div>
+    <a name = "gopaint" class = "anchor"></a>
+    <a class = "p-link" href = "https://www.oculus.com/experiences/go/1841342939289405/"><img class = "p-image" src = "img/gopaint_work.png"></a>
+    <p style = "width: 66%;" >
+        GoPaint is a digital painting application for mobile VR headsets. I started this project because I wanted to do more
+        digital painting, and I liked the idea of being able to work on paintings on a large virtual canvas with a headset that I could
+        easily bring with me anywhere. A little while later and I had the tool I was dreaming of, and am very pleased and honored to see
+        people using it all around the world.
+    </p>
     </div>
-        <br />
+
+    <div>
+    <a name = "swerve" class = "anchor"></a>            
+    <p style = "width: 66%;" >
+        Swerve is Pong in VR. I did this project a couple of years ago with the goal of putting
+        something up on the GearVR store. I wanted to put a virtual spin on a classic game, and had
+        a lot of fun in the process.
+    </p>
+    <a class = "p-link" href = "https://www.oculus.com/experiences/gear-vr/1237853882906165/?locale=en_US"><img class = "p-image" src = "img/swerve_work.png"></a>
     </div>
-    <div class = "container" style="margin: auto; width:850px;">
-            <div class = "column"><a href = "gifs.html" style="color:#000000; padding:10px" >Gifs</a><a class="image" href = "gifs.html"><img src="img/smoke_flip.gif" alt="sea-c" style="height:256px; padding: 10px;"></a></div>
-            <div class = "column"><a href = "models.html" style="color:#000000; padding:10px" >3D Models</a><a class="image" href = "models.html"><img src="img/rolex_perspective_sq.png" alt="sea-c" style="height:256px; padding: 10px;"></a></div>
-            <div class = "column"><a href = "virtualreality.html" style="color:#000000; padding:10px" >Virtual Reality</a><a class="image" href = "virtualreality.html"><img src="img/gopaint_sq.jpg" alt="sea-c" style="height:256px; padding: 10px;"></a></div>
+
+    <div>
+     <a name = "gifs" class = "anchor"></a>   
+        <a class = "p-link" href = "https://ello.co/sea-c"><img class = "p-image" src = "img/plussed.gif"></a>
+        <p style = "width: 66%;" >
+            I've been making gifs for quite a while now. I always aim to make them pleasing to look at for a while, even though
+            most are only two second loops. I love the challenge of creating entrancing infinite loops with very few frames.
+        </p>
+        </div>
+
+    <div>
+        <a name = "3dmodels" class = "anchor"></a>            
+        <p style = "width: 66%;" >
+            I love to make 3D models, both as an artistic pursuit as well as a challenge to craft
+            clean topology and highly optimized virtual assets.
+        </p>
+        <a class = "p-link" href = "https://sketchfab.com/sechristo"><img class = "p-image" src = "img/rolex_perspective_sq.png"></a>
     </div>
-    <br/>
+
+</div>
+
+<a href="https://twitter.com/_sea_c_" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com/sean.christofferson/" class="fa fa-instagram"></a>
+</center>
 </body>
 </html>
