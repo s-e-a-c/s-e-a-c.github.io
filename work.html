@@ -5,142 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="s_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
 </head>
-
-<style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      font-weight: thin;
-      background-color: #ffffff;
-      color: #000000;
-      line-height: 25px;
-    }
-
-    p {
-        text-align: left;
-        margin: 20px;
-        max-width: 66.6666%;
-    }
-
-    .flex-container {
-      display: flex;
-      flex-wrap: nowrap;
-      justify-content: center;
-      align-items: stretch;
-      align-content: stretch;
-      margin: 10px;
-    }
-    
-    .flex-container > div {
-      background-color: #ffffff;
-      width: 80px;
-      margin: 0px;
-      text-align: center;
-      padding: 2px;
-      font-size: 16px;
-    }
-
-    .pcontent-row {
-      display: flex;
-      flex-wrap: wrap;
-      max-width: 800px;
-      flex-basis: 30%;
-      justify-content: center;
-      align-items: stretch;
-      align-content: stretch;
-      margin: 10px;
-    }
-
-    .pcontent-row > div {
-      display: flex;
-      background-color: #ffffff;
-      max-width: 800px;
-      height: 400px;
-      margin: 10px;
-      font-size: 16px;
-      border-style: solid;
-      border-color:  #bfbfbf;
-
-      border-width: 1px;
-      overflow: hidden;
-    }
-
-    .p-link {
-        display: flex;
-        overflow: hidden;
-        justify-content: center;
-        align-content: center;
-        height: 100%;
-        width: 33%;
-        min-width: 33%;
-    }
-
-    .p-image {
-        transition: 0.5s;
-        height:100%;
-    }
-    .p-image:hover {
-        opacity: 0.5;
-        height:100%;
-    }
-
-    h1 {
-      text-align: center;
-      font-size: 26px;
-      margin-top: 20px;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      text-align: center;
-      font-size: 16px;
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
-
-    hr {
-        max-width: 400px;
-        height: 1px;
-        border: none;
-        color: #bfbfbf;
-        background-color: #bfbfbf;
-    }
-
-    a {
-        text-decoration: none;
-        transition: 0.3s;
-    }
-
-    a:link {
-        color: #000000;
-      }
-      
-      /* visited link */
-      a:visited {
-        color: #000000;
-      }
-      
-      /* mouse over link */
-      a:hover {
-        color: #cccccc;
-      }
-      
-      /* selected link */
-      a:active {
-        color: #ffffff;
-      }
-
-      a.home-link {
-          color: #000000;
-      }
-
-      .anchor {
-          position: relative;
-          top: -25%;
-      }
-</style>
 
 
 <body>
@@ -153,7 +20,6 @@
     <div><a href = "contact.html">Contact</a></div> 
 </div>
 
-<hr>
 <center>
 <div class="pcontent-row">
     <div>
@@ -168,52 +34,13 @@
     </div>
 
     <div>
-        <a name = "animo" class = "anchor"></a>
+    <a name = "erosion" class = "anchor"></a>   
         <p style = "width: 66%;" >
-            Animo is a stop motion animation tool for virtual reality. Using simple shapes as building blocks you can model characters 
-            and environments which can then be animated and enriched with live recordings or saved audio. The goal of this project is to 
-            create a tool that is easy to learn and capable of creating painted models, animated loops, and whole stories from start to finish.
-        </p>
-        <a class = "p-link" href = "#animo"><img class = "p-image" src = "img/Animo.gif"></a>
-    </div>
-
-    <div>
-    <a name = "curvetool" class = "anchor"></a>   
-        <a class = "p-link" href = "#curvetool"><img class = "p-image" src = "img/CurveTool.gif"></a>
-        <p style = "width: 66%;" >
-            Curve Tool gives the user the ability to concept 3D models in virtual reality using an editable hierarchy of 
-            bezier curves.
-        </p>
-    </div>
-
-    <div>
-        <a name = "neptune" class = "anchor"></a>
-        <p style = "width: 66%;" >
-            Neptune is a node-based procedural PBR texture editor and painter. Currently in the concept stage, this tool aims 
-            to provide artists with the ability to design and apply materials to 3D models in an immersive context.
-        </p>
-        <a class = "p-link" href = "#neptune"><img class = "p-image" src = "img/Neptune.gif"></a>
-        </div>
-
-        <div>
-        <a name = "erosion" class = "anchor"></a>   
-            <a class = "p-link" href = "img/terrain.png"><img class = "p-image" src = "img/terrain.png"></a>
-            <p style = "width: 66%;" >
-                I've made an erosion simulator in Unity based on the paper 
-                <a href = "http://hpcg.purdue.edu/bbenes/papers/Stava08SCA.pdf" >"Interactive Terrain Modeling Using Hydraulic Erosion" - Stava et al. 2008. </a>
-                This an ongoing personal project that will develop into a node-based terrain generator and editor.
-        </p>
-        </div>
-
-
-    <div>
-    <a name = "swerve" class = "anchor"></a>
-    <p style = "width: 66%;" >
-        Swerve is Pong in VR. I did this project a couple of years ago with the goal of putting
-        something up on the GearVR store. I wanted to put a virtual spin on a classic game, and had
-        a lot of fun in the process.
+            I've made an erosion simulator in Unity based on the paper 
+            <a href = "http://hpcg.purdue.edu/bbenes/papers/Stava08SCA.pdf" >"Interactive Terrain Modeling Using Hydraulic Erosion" - Stava et al. 2008. </a>
+            This an ongoing personal project that will develop into a node-based terrain generator and editor.
     </p>
-    <a class = "p-link" href = "https://www.oculus.com/experiences/gear-vr/1237853882906165/?locale=en_US"><img class = "p-image" src = "img/swerve_work.png"></a>
+    <a class = "p-link" href = "img/terrain.png"><img class = "p-image" src = "img/terrain.png"></a>
     </div>
 
     <div>
